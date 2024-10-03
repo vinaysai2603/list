@@ -18,3 +18,20 @@ Sample Input 2:
 Sample Output 2:
 4 is not present in the given list
 '''
+def search_element(numbers, target):
+    if target in numbers:
+        return f"{target} is present in the given list"
+    else:
+        return f"{target} is not present in the given list"
+
+# Input
+size = int(input("Enter the size of the list: "))  # First input for the size of the list
+numbers = list(map(int, input("Enter the elements of the list: ").split()))  # Second input for the list
+target = int(input("Enter the element to search: "))  # Third input for the search element
+
+# Search for the element
+result = search_element(numbers, target)
+
+# Output the result
+print(result)
+
