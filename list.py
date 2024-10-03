@@ -15,3 +15,22 @@ Sample Input
 Output
 [1, 2, 3, 4]
 '''
+def create_and_display_list():
+    # Input for the size of the list
+    size = int(input("Enter the size of the list: "))
+    
+    # Initialize an empty list
+    numbers = []
+    
+    # Collecting the list elements
+    for _ in range(size):
+        num = int(input())
+        numbers.append(num)
+    
+    # Output the list
+    print(numbers)
+
+# Call the function
+create_and_display_list()
+
+
